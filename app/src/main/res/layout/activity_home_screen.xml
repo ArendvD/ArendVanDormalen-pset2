@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/madLibsImage"
         android:src="@drawable/madlibs"
-        />
+        android:contentDescription="@string/front_page_pic_description" />
 
     <TextView
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
         android:id="@+id/nextScreenButton"
         android:text="@string/first_button"
         android:onClick="goToFillScreen"
-        android:textSize="20dp"/>
+        android:textSize="20sp"/>
 
 
 </RelativeLayout>
