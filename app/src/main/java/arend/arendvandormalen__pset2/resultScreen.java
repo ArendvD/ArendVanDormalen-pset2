@@ -28,6 +28,7 @@ public class resultScreen extends AppCompatActivity {
 
     }
 
+    // Restart button
     public void restartStory(View view){
         Intent getFirstScreen = new Intent(this, homeScreen.class);
         startActivity(getFirstScreen);

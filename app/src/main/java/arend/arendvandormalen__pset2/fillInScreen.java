@@ -30,22 +30,20 @@ public class fillInScreen extends AppCompatActivity{
 
         InputStream is;
 
-        // Try to open a random file. File not found or bug in Random will create an empty story.
+        // Try to open a random file. File not found will create an empty story.
         try {
             Random rand = new Random();
-            int value = rand.nextInt(5);
+            int value = rand.nextInt(4);
             switch (value) {
-                case 0: is = getAssets().open("madlib0_simple.txt");
+                case 0: is = getAssets().open("madlib1_tarzan.txt");
                     break;
-                case 1: is = getAssets().open("madlib1_tarzan.txt");
+                case 1: is = getAssets().open("madlib2_university.txt");
                     break;
-                case 2: is = getAssets().open("madlib2_university.txt");
+                case 2: is = getAssets().open("madlib3_clothes.txt");
                     break;
-                case 3: is = getAssets().open("madlib3_clothes.txt");
+                case 3: is = getAssets().open("madlib4_dance.txt");
                     break;
-                case 4: is = getAssets().open("madlib4_dance.txt");
-                    break;
-                default: is = null;
+                default: is = getAssets().open("madlib0_simple.txt");
                     break;
             }
         } catch (IOException e){

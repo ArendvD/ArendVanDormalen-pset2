@@ -18,6 +18,7 @@ public class homeScreen extends AppCompatActivity {
         setContentView(R.layout.activity_home_screen);
     }
 
+    // Button for going to next screen
     public void goToFillScreen(View view) {
         Intent getSecondScreenIntent = new Intent(this, fillInScreen.class);
         startActivity(getSecondScreenIntent);
