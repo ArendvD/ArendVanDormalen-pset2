@@ -13,6 +13,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Random;
 
+import static android.R.attr.id;
+
 /**
  * Created by Arend on 2016-11-08.
  * This activity creates the story based on user input and transfers it to the next screen.
@@ -60,8 +62,8 @@ public class fillInScreen extends AppCompatActivity{
             // Get initial number of placeholders
             int placeholderNum = story.getPlaceholderCount();
             TextView textView = (TextView) findViewById(R.id.numLeft);
-            Log.d("placeholders left is", Integer.toString(placeholderNum));
-            textView.setText(Integer.toString(placeholderNum));
+            String number = Integer.toString(placeholderNum);
+            textView.setText(number + " word(s) left");
 
             // Get type of first placeholder
             TextView hintView = (TextView) findViewById(R.id.fillInBox);
@@ -82,13 +84,14 @@ public class fillInScreen extends AppCompatActivity{
         story.fillInPlaceholder(word);
         contentEdit.setText("");
 
-        // update number of placeholders that is left
+        // Update number of placeholders that is left
         int placeholdersLeft = story.getPlaceholderRemainingCount();
         TextView textView = (TextView) findViewById(R.id.numLeft);
         Log.d("placeholders left is", Integer.toString(placeholdersLeft));
-        textView.setText(Integer.toString(placeholdersLeft));
+        String number = Integer.toString(placeholdersLeft);
+        textView.setText(number + " word(s) left");
 
-        // update displayed hint or placeholder type
+        // Update displayed hint or placeholder type
         contentEdit.setHint(story.getNextPlaceholder());
 
         if(story.isFilledIn()) {
@@ -103,7 +106,7 @@ public class fillInScreen extends AppCompatActivity{
 
         }
 
-        // End OnClick
+        // End submitWord
         }
 
 
