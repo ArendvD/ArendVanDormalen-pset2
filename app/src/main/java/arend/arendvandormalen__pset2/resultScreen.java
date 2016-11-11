@@ -18,9 +18,12 @@ public class resultScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results_screen);
 
-        TextView results = (TextView)findViewById(R.id.story_output);
+        // Retrieve text from story
         Bundle bundle = getIntent().getExtras();
         String story = bundle.getString("storyText");
+
+        // Add text to xml
+        TextView results = (TextView)findViewById(R.id.story_output);
         results.setText(story);
 
     }

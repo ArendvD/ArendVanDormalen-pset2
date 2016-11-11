@@ -5,6 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+/**
+ * Created by Arend on 2016-11-08.
+ * This activity creates the story based on user input and transfers it to the next screen.
+ */
+
 public class homeScreen extends AppCompatActivity {
 
     @Override

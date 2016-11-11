@@ -7,4 +7,5 @@
     <string name="words_left">word(s) left</string>
     <string name="submit_word">OK</string>
     <string name="next_story_button">Make another story</string>
+    <string name="warning_message">Please enter a word!</string>
 </resources>

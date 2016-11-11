@@ -79,7 +79,16 @@ public class fillInScreen extends AppCompatActivity{
 
         // Load input word and clear input box
         String word = contentEdit.getText().toString();
-        Log.d("chosen word is", word);
+
+        // error message if word is empty
+        TextView warning = (TextView) findViewById(R.id.empty_input);
+        if("".equals(word)){
+            warning.setText(R.string.warning_message);
+            return;
+        } else {
+            warning.setText("");
+        }
+
         story.fillInPlaceholder(word);
         contentEdit.setText("");
 
