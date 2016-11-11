@@ -15,12 +15,6 @@ public class homeScreen extends AppCompatActivity {
 
     public void goToFillScreen(View view) {
         Intent getSecondScreenIntent = new Intent(this, fillInScreen.class);
-
-        final int result = 1;
-
-        getSecondScreenIntent.putExtra("sourceScreen","HomeScreen");
-
         startActivity(getSecondScreenIntent);
-
     }
 }

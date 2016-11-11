@@ -16,8 +16,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="fillInScreen"
+        <activity android:name=".fillInScreen"
             android:label="Fill In Words"
+            android:theme="@style/AppTheme"
+        />
+
+        <activity android:name=".resultScreen"
+            android:label="Result"
             android:theme="@style/AppTheme"
         />
 

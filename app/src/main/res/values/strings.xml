@@ -6,4 +6,5 @@
     <string name="front_page_pic_description">Mad Libs Guy</string>
     <string name="words_left">  word(s) left</string>
     <string name="submit_word">OK</string>
+    <string name="next_story_button">Make another story</string>
 </resources>
